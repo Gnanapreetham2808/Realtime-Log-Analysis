@@ -1,22 +1,16 @@
 import streamlit as st
-import pandas as pd
-import numpy as np
-import joblib
 
-# Title and intro
-st.title("Capstone Project Demo 🚀")
-st.write("A minimal Streamlit deployment of your Jupyter notebook.")
+st.title("Capstone Project — Streamlit Launcher")
+st.write("This repository contains a Streamlit app for log analysis.")
 
-# Example: upload a CSV for model prediction
-uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
+st.markdown(
+    """
+- To open the interactive log viewer, run:
+```
+streamlit run streamlit_app.py
+```
+- Or click the Run button in your editor that runs `streamlit_app.py`.
+"""
+)
 
-if uploaded_file:
-    df = pd.read_csv(uploaded_file)
-    st.write("### Uploaded Data", df.head())
-
-    # Load your trained model (update this path if needed)
-    model = joblib.load("model/model.pkl")
-
-    # Predict (example — adapt to your notebook’s output)
-    preds = model.predict(df)
-    st.write("### Predictions", preds)
+st.info("If you want this page to directly host the app, rename `streamlit_app.py` to `app.py` or import its UI here.")

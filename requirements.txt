@@ -1,5 +1,9 @@
-streamlit
-pandas
+streamlit>=1.0
+pandas>=1.0
 numpy
 scikit-learn
 joblib
+matplotlib>=3.0
+findspark>=1.0
+# pyspark is optional and large; install only if you plan to run Spark mode
+# pyspark>=3.0

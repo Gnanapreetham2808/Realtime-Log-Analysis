@@ -1,0 +1,12 @@
+127.0.0.1 - - [08/Nov/2025:00:00:01 +0000] "GET /index.html HTTP/1.1" 200 1024
+127.0.0.2 - - [08/Nov/2025:00:00:02 +0000] "GET /about.html HTTP/1.1" 200 2048
+127.0.0.3 - - [08/Nov/2025:00:00:03 +0000] "GET /contact.html HTTP/1.1" 404 512
+127.0.0.4 - - [08/Nov/2025:00:00:04 +0000] "POST /api/login HTTP/1.1" 500 64
+127.0.0.1 - - [08/Nov/2025:00:00:05 +0000] "GET /index.html HTTP/1.1" 200 1024
+127.0.0.2 - - [08/Nov/2025:00:00:06 +0000] "GET /products HTTP/1.1" 200 1536
+127.0.0.3 - - [08/Nov/2025:00:00:07 +0000] "GET /missing HTTP/1.1" 404 0
+127.0.0.5 - - [08/Nov/2025:00:00:08 +0000] "GET /index.html HTTP/1.1" 200 1024
+127.0.0.1 - - [08/Nov/2025:00:00:09 +0000] "GET /index.html HTTP/1.1" 200 1024
+127.0.0.6 - - [08/Nov/2025:00:00:10 +0000] "GET /dashboard HTTP/1.1" 302 128
+
+# Repeated synthetic block to make the file larger
